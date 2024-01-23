@@ -1,0 +1,372 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.navbar span {
+  margin-left: 100px;
+  font-size: 20px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin-left: 200px;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+.navbar a:hover {
+  color: tomato;
+}
+.navbar .icons {
+  display: flex;
+  gap: 15px;
+  margin-left: 160px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.navbar .icon:hover {
+  color: tomato;
+}
+.navbar .menu {
+  display: none;
+  color: #0b1c39;
+  font-size: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .navbar ul {
+    display: none;
+  }
+  .navbar .icons {
+    font-size: 18px;
+    margin-left: 250px;
+    gap: 40px;
+  }
+  .navbar .menu {
+    display: flex;
+  }
+}
+.sec1 {
+  background-color: #f0f0f2;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec1 .sec_div {
+  display: flex;
+}
+.sec1 .sec_div .text {
+  width: 60%;
+  height: 300px;
+  margin-top: 300px;
+  margin-left: 70px;
+  color: #0b1c39;
+}
+.sec1 .sec_div .text h2 {
+  font-size: 90px;
+}
+.sec1 .sec_div .text p {
+  font-size: 20px;
+  padding: 30px 0;
+}
+.sec1 .sec_div .text button {
+  font-size: 17px;
+  padding: 12px 30px;
+  background-color: rgb(75, 75, 77);
+  color: white;
+  border: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+}
+.sec1 .sec_div .text button:hover {
+  background-color: #ff2020;
+}
+.sec1 .sec_div .img {
+  width: 28%;
+  height: 100%;
+}
+.sec1 .sec_div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 720px) {
+  .sec1 {
+    height: 500px;
+  }
+  .sec1 .sec_div .text {
+    margin-top: -3px;
+  }
+  .sec1 .sec_div .text h2 {
+    font-size: 40px !important;
+  }
+  .sec1 .sec_div .text p {
+    font-size: 17px;
+  }
+  .sec1 .sec_div .img {
+    width: 30%;
+    height: 100vh;
+  }
+}
+.sec2 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec2 h3 {
+  font-size: 45px;
+  padding: 80px 0px;
+  margin-top: 100px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 2px;
+}
+.sec2 .sec2_div {
+  display: flex;
+  gap: 30px;
+  padding: 0 0 200px 0;
+}
+.sec2 .sec2_div .div {
+  width: 35%;
+}
+.sec2 .sec2_div .div .img .tex {
+  text-align: center;
+}
+.sec2 .sec2_div .div .img .tex h4 {
+  color: #444444;
+  font-size: 23px;
+  padding: 15px 0;
+}
+.sec2 .sec2_div .div .img .tex p {
+  color: #ff2020;
+}
+
+.sec3 {
+  width: 100%;
+  min-height: 100vh;
+}
+.sec3 .div {
+  width: 87%;
+  min-height: 100vh;
+  margin: auto;
+}
+.sec3 .div .text {
+  width: 60%;
+  height: 200px;
+  text-align: center;
+  margin: auto;
+  padding: 40px 0;
+}
+.sec3 .div .text h3 {
+  font-size: 40px;
+}
+.sec3 .div .text p {
+  color: gray;
+}
+.sec3 .div .boxs {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 20px;
+}
+.sec3 .div .boxs .cart {
+  width: 33%;
+  height: 500px;
+}
+.sec3 .div .boxs .cart .img {
+  width: 100%;
+  height: 400px;
+}
+.sec3 .div .boxs .cart .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sec3 .div .boxs .cart .cart_tex {
+  text-align: center;
+}
+.sec3 .div .boxs .cart .cart_tex h4 {
+  color: #444444;
+  font-size: 23px;
+  padding: 15px 0;
+}
+.sec3 .div .boxs .cart .cart_tex p {
+  color: #ff2020;
+}
+
+@media screen and (max-width: 720px) {
+  .sec3 .div {
+    width: 60%;
+  }
+  .sec3 .boxs {
+    flex-wrap: wrap;
+    width: 300px;
+    height: 200px;
+  }
+}
+.sect4 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.sect4 .div {
+  margin: auto;
+  width: 90%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+.sect4 .div .met {
+  width: 42%;
+  height: 300px;
+}
+.sect4 .div .met h3 {
+  font-size: 45px;
+}
+.sect4 .div .met p {
+  font-size: 18px;
+  padding: 20px 0px;
+  color: gray;
+}
+.sect4 .div .met button {
+  font-size: 18px;
+  padding: 15px 20px;
+  color: white;
+  border: none;
+  background-color: #ff2020;
+  cursor: pointer;
+}
+.sect4 .div .met button:hover {
+  background-color: #444444;
+}
+.sect4 .div .img {
+  width: 40%;
+  height: 100%;
+}
+
+.sect5 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.sect5 .div {
+  margin: auto;
+  width: 90%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+.sect5 .div .met {
+  width: 42%;
+  height: 300px;
+}
+.sect5 .div .met h3 {
+  font-size: 45px;
+}
+.sect5 .div .met p {
+  font-size: 18px;
+  padding: 20px 0px;
+  color: gray;
+}
+.sect5 .div .met button {
+  font-size: 18px;
+  padding: 15px 20px;
+  color: white;
+  border: none;
+  background-color: #ff2020;
+  cursor: pointer;
+}
+.sect5 .div .met button:hover {
+  background-color: #444444;
+}
+.sect5 .div .img {
+  width: 40%;
+  height: 100%;
+}
+
+.timezone {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.timezone .div1 {
+  width: 20%;
+  height: 250px;
+}
+.timezone .div1 .icon {
+  width: 150px;
+}
+.timezone .div1 p {
+  padding: 20px 0;
+  color: gray;
+}
+.timezone .div {
+  width: 20%;
+  height: 250px;
+}
+.timezone .div ul {
+  padding: 20px 5px;
+  list-style: none;
+}
+.timezone .div ul li {
+  font-size: 18px;
+  padding: 7px 0;
+  color: gray;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+.footer p {
+  color: rgb(173, 170, 170);
+  padding: 70px;
+}
+.footer p i {
+  color: #ff2020;
+}/*# sourceMappingURL=style.css.map */
